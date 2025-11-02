@@ -1,0 +1,236 @@
+
+.custom-nav-link {
+  color: #6C2A3B;
+  transition: color 0.3s ease;
+}
+
+.custom-nav-link:hover {
+  color: #FF70A6;
+}
+
+.nav-link.active {
+  color: #FF70A6 !important;
+  font-weight: bold;
+}
+/* ---------------- GENERAL ---------------- */
+body#menu {
+  background-color: #FFF8FB;
+  font-family: 'Times New Roman', 'Poppins', sans-serif;
+}
+
+
+/* ---------------- FILTER BUTTONS ---------------- */
+.filter-buttons button {
+  border-color: #FF70A6;
+  color: #FF70A6;
+}
+
+.filter-buttons button:hover {
+  background-color: #FF70A6;
+  color: white;
+}
+
+/* ---------------- CARDS ---------------- */
+.card {
+  border: none;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 6px 15px rgba(255, 112, 166, 0.25);
+}
+
+
+.price-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.add-btn {
+  border: 1px solid #FFB3C6;
+  background-color: #FFF5F8;
+  color: #FF70A6;
+  font-weight: bold;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.add-btn:hover {
+  background-color: #FF70A6;
+  color: white;
+}
+
+
+footer {
+  text-align: center;
+  background-color: #FFE0E9;
+  padding: 15px;
+  margin-top: 50px;
+  color: #6C2A3B;
+  font-weight: 500;
+}
+
+footer p {
+  margin: 0;
+  font-size: 0.9rem;
+}
+/* Fixed cart button */
+body{
+  font-family: 'Times New Roman';
+}
+.cart-button {
+  position: fixed;
+  bottom: 30px;
+  
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  gap: 10px;
+  background-color: #FFB3C6; /* you can change this later to blue or yellow */
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 40px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.25s ease;
+  z-index: 1000; /* stays on top */
+}
+
+.cart-button:hover {
+  background-color: #FF70A6; /* darker hover color */
+  transform: translateY(-3px);
+}
+
+/* Text and number */
+.cart-text {
+  margin: 0;
+  font-size: 16px;
+}
+
+.cart-count {
+  background-color: white;
+  color: #FF70A6;
+  font-weight: bold;
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-size: 14px;
+  min-width: 25px;
+  text-align: center;
+}
+
+.filter-btn.active {
+  background-color: #FFB3C6;
+  color: white;
+}
+.menu-item[data-category="donuts"] img {
+  transition: transform 0.4s ease;
+}
+
+.menu-item[data-category="donuts"]:hover img {
+  transform: translateY(-10px) rotate(8deg);
+}
+
+.expanded-controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  background-color: #fff7fa;
+  border-radius: 30px;
+  padding: 6px 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  animation: popIn 0.2s ease;
+}
+
+.expanded-controls button {
+  border: none;
+  background-color: #FFB3C6;
+  color: white;
+  font-weight: bold;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.2s, transform 0.2s;
+}
+
+.expanded-controls button:hover {
+  background-color: #ff8fb3;
+  transform: scale(1.1);
+}
+
+.expanded-controls .quantity {
+  font-weight: 600;
+  min-width: 20px;
+  text-align: center;
+}
+
+.expanded-controls .total {
+  font-weight: 600;
+  color: #555;
+}
+
+/*Cart*/
+body#cart-page {
+  background-color: #FFF8FB;
+  font-family: 'Times New Roman';
+  color: #6C2A3B;
+}
+
+/* Title */
+h1 {
+  color: #FF70A6;
+}
+
+/* Cart list */
+.cart-list .list-group-item {
+  background-color: #fff7fa;
+  border: 1px solid #ffe0e9;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.cart-list .list-group-item h6 {
+  color: #6C2A3B;
+}
+
+/* Form */
+.checkout-form .form-label {
+  color: #6C2A3B;
+  font-weight: 500;
+}
+
+.checkout-form input,
+.checkout-form select,
+.checkout-form textarea {
+  border: 1px solid #FFB3C6;
+  border-radius: 10px;
+  background-color: #fff7fa;
+}
+
+.checkout-form input:focus,
+.checkout-form select:focus,
+.checkout-form textarea:focus {
+  border-color: #FF70A6;
+  box-shadow: 0 0 5px rgba(255,112,166,0.4);
+}
+
+/* Button */
+.btn-pink {
+  background-color: #FF70A6;
+  color: white;
+  border-radius: 25px;
+  padding: 12px;
+  transition: all 0.2s ease;
+}
+
+.btn-pink:hover {
+  background-color: #FF8FB3;
+  transform: translateY(-2px);
+}
+

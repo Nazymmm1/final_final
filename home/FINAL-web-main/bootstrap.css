@@ -1,0 +1,16 @@
+.hero-image img {
+    width: 100%;
+    max-width: 650px; 
+}
+
+@media (max-width: 768px) {
+    .hero-image img {
+        max-width: 400px;
+    }
+}
+
+@media (max-width: 576px) {
+    .hero-image img {
+        max-width: 320px;
+    }
+}

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer corner</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+   <header class="simple-header">
+  <div class="nav-container">
+    <div class="logo">
+      <img src="too_classic.png" alt="Donnie Logo" width="40" height="auto">
+      <span>Sugar Bloom</span>
+    </div>
+    <nav class="nav-links">
+      <a href="homepage.html">HOME</a>
+      <a href="menu.html">MENU</a>
+      <a href="review.html" class="active">REVIEW</a>
+      <a href="aboutus.html">ABOUT US</a>
+    </nav>
+  </div>
+</header>
+
+
+<!-- <header>
+        <h1>Customer corner </h1>
+        <p>Share your thoughts and ask questions</p>
+    </header> -->
+
+    <!-- Reviews -->
+    <section class="review-section">
+        <h2>Customer Reviews</h2>
+        <form id="reviewForm">
+            <input type="text" id="name" placeholder="Your Name" required>
+            <textarea id="reviewText" placeholder="Write your review..." required></textarea>
+            <button type="submit">Submit Review</button>
+        </form>
+        <div id="reviewsList">
+            <h3>Recent Reviews:</h3>
+            <ul></ul>
+        </div>
+    </section>
+
+
+<section class="image-slider">
+    <h1>Reviews</h1>
+
+  <div class="slider-track">
+    <img src="image1.jpeg" alt="Glazed Donut">
+    <img src="image2.jpeg" alt="Chocolate Donut">
+    <img src="image3.jpeg" alt="Strawberry Donut">
+    <img src="image4.jpeg" alt="Sprinkle Donut">
+    <img src="image5.jpeg" alt="Glazed Donut">
+    <img src="image6.jpeg" alt="Chocolate Donut">
+    <img src="image7.jpeg" alt="Strawberry Donut">
+  </div>
+</section>
+
+
+
+<!-- User Questions -->
+    <section class="question-section">
+        <h2>Ask a Question</h2>
+        <form id="questionForm">
+            <input type="text" id="qName" placeholder="Your Name" required>
+            <textarea id="qText" placeholder="Write your question..." required></textarea>
+            <button type="submit">Submit Question</button>
+        </form>
+        
+    </section>
+
+    <!-- freq -->
+    <section class="faq-section">
+        <h2>Frequently Asked Questions</h2>
+        <div class="faq-item">
+            <div class="faq-question">How can I place an order?</div>
+            <div class="faq-answer">You can order donuts directly from our website by choosing your favorites and adding them to the cart.</div>
+        </div>
+        <div class="faq-item">
+            <div class="faq-question">Do you offer delivery?</div>
+            <div class="faq-answer">Yes! We deliver across the city within 30–60 minutes depending on your location.</div>
+        </div>
+        <div class="faq-item">
+            <div class="faq-question">Can I customize my donuts?</div>
+            <div class="faq-answer">Of course! You can choose your glaze, toppings, and filling when placing your order.</div>
+        </div>
+        <div class="faq-item">
+            <div class="faq-question">Are your donuts suitable for vegans?</div>
+            <div class="faq-answer">Yes, we offer vegan-friendly and gluten-free options.</div>
+        </div>
+        <div class="faq-item">
+            <div class="faq-question">Can I pre-order for a party or event?</div>
+            <div class="faq-answer">Absolutely! Please contact us at least 24 hours in advance for bulk or custom orders.</div>
+        </div>
+    </section>
+
+    <footer>
+        <p>2025 Sweet Donuts — Made with love 💗</p>
+    </footer>
+</body>
+</html>

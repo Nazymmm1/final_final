@@ -1,0 +1,170 @@
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: #fff7fa;
+  color: #2e2e2e;
+}
+
+header {
+  display: flex;
+  justify-content: flex-end;
+  padding: 25px 100px;
+  background-color: #ffe6ef;
+  box-shadow: 0 2px 8px rgba(255, 0, 120, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+header a {
+  text-decoration: none;
+  color: #ff007f;
+  font-weight: bold;
+  font-size: 20px;
+  margin-left: 25px;
+  transition: 0.3s;
+}
+
+header a:hover,
+header a.active {
+  color: #ff3399;
+  text-decoration: underline;
+}
+
+.about-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 100px;
+  flex-wrap: wrap;
+  background: linear-gradient(135deg, #fff0f6 0%, #fff 100%);
+}
+
+.about-text {
+  max-width: 600px;
+}
+
+.about-text h1 {
+  font-size: 70px;
+  color: #ff007f;
+  margin-bottom: 20px;
+}
+
+.about-text p {
+  font-size: 20px;
+  line-height: 1.6;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.about-img img {
+  width: 420px;
+  border-radius: 20px;
+  box-shadow: 0 0 25px rgba(255, 0, 120, 0.3);
+  transition: 0.3s;
+}
+
+.about-img img:hover {
+  transform: scale(1.05);
+}
+
+.btn {
+  background-color: #ff007f;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  padding: 12px 30px;
+  border-radius: 40px;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background-color: #ff3399;
+  transform: scale(1.05);
+}
+
+.features {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+  text-align: center;
+  padding: 80px 60px;
+  background-color: #fff;
+}
+
+.feature {
+  width: 220px;
+}
+
+.feature img {
+  width: 70px;
+  margin-bottom: 15px;
+}
+
+.feature h3 {
+  color: #ff007f;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.feature p {
+  font-size: 16px;
+  color: #555;
+}
+
+.partners {
+  background-color: #ffe6ef;
+  padding: 80px 100px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.partners-text {
+  max-width: 450px;
+}
+
+.partners-text h2 {
+  color: #ff007f;
+  font-size: 36px;
+  margin-bottom: 15px;
+}
+
+.partners-text p {
+  color: #444;
+  line-height: 1.6;
+  font-size: 18px;
+}
+
+.partner-form {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  gap: 12px;
+}
+
+.partner-form input,
+.partner-form textarea {
+  padding: 12px;
+  border: 2px solid #ffb6d5;
+  border-radius: 10px;
+  font-size: 16px;
+  outline: none;
+}
+
+.partner-form input:focus,
+.partner-form textarea:focus {
+  border-color: #ff3399;
+}
+
+footer {
+  text-align: center;
+  padding: 25px;
+  background-color: #fff0f6;
+  color: #555;
+  font-size: 15px;
+}
+

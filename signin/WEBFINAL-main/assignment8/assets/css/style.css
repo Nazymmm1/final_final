@@ -1,0 +1,263 @@
+/* ===== GLOBAL ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --pink1: #F3A2BE;
+  --pink2: #FFD3DD;
+  --black: #000;
+}
+
+body {
+  font-family: "Times New Roman", serif;
+  background: linear-gradient(180deg, var(--pink2), #fff);
+  color: var(--black);
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+/* ===== NAVBAR ===== */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #FFE0E9;
+  padding: 15px 60px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  flex-wrap: wrap;
+}
+
+/* логотип и название */
+.navbar-brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+}
+
+.logo {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.brand-name {
+  font-size: 32px;
+  color: #FF0082;
+  font-family: "Times New Roman", serif;
+  font-weight: bold;
+}
+
+/* ===== NAV LINKS ===== */
+.navbar-nav {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.navbar-nav .nav-item {
+  margin-right: 15px;
+}
+
+.navbar-nav .nav-item:last-child {
+  margin-right: 0;
+}
+
+.custom-nav-link {
+  color: #FF0082 !important;
+  font-size: 22px;
+  font-family: "Times New Roman", serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: none !important;
+  transition: transform 0.2s ease, color 0.3s ease;
+}
+
+.custom-nav-link:hover {
+  color: #fff !important;
+  transform: scale(1.07);
+}
+
+/* чтобы форма не заходила под navbar */
+main {
+  margin-top: 120px;
+}
+
+/* ===== FORM CARD ===== */
+.form-card {
+  max-width: 450px;
+  width: 100%;
+  border-radius: 25px;
+  background-color: var(--pink2);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-card:hover {
+  transform: scale(1.02);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+}
+
+.form-card h2 {
+  color: #FF0082;
+  font-weight: bold;
+  margin-bottom: 25px;
+}
+
+/* инпуты */
+.form-control {
+  border-radius: 12px;
+  border: 1px solid #ccc;
+  padding: 10px 14px;
+  font-size: 16px;
+}
+
+.form-control:focus {
+  border-color: #FF0082;
+  box-shadow: 0 0 6px rgba(255, 0, 130, 0.3);
+}
+
+/* кнопка */
+.btn-pink {
+  background-color: #FF0082;
+  border: none;
+  color: #fff;
+  padding: 12px;
+  border-radius: 20px;
+  font-size: 18px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-pink:hover {
+  background-color: #e00073;
+  transform: scale(1.03);
+}
+
+/* ===== DONUT IMAGES ===== */
+.side-image {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  opacity: 0.9;
+  filter: drop-shadow(0 0 12px rgba(0, 0, 0, 0.15));
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+/* левый пончик */
+.side-image.left {
+  left: -220px;
+  width: 850px;
+}
+
+/* правый пончик */
+.side-image.right {
+  right: -220px;
+  width: 850px;
+  transform: translateY(-50%) scaleX(-1);
+}
+
+/* ====== MOBILE VERSION ====== */
+@media (max-width: 992px) {
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 20px;
+  }
+
+  .brand-name {
+    font-size: 26px;
+  }
+
+  .navbar-nav {
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+  }
+
+  .navbar-nav .nav-item {
+    margin-right: 0;
+  }
+
+  .custom-nav-link {
+    font-size: 20px;
+  }
+
+  main {
+    margin-top: 150px;
+  }
+
+  .form-card {
+    width: 90%;
+    max-width: 380px;
+    padding: 25px;
+  }
+
+  .form-card h2 {
+    font-size: 24px;
+  }
+
+  .btn-pink {
+    font-size: 16px;
+    padding: 10px;
+  }
+
+  .form-control {
+    font-size: 15px;
+    padding: 8px 10px;
+  }
+
+  /* пончики — меньше и не перекрывают форму */
+  .side-image {
+    opacity: 0.5;
+    position: relative;
+    display: block;
+    margin: 30px auto;
+    transform: none;
+  }
+
+  .side-image.left,
+  .side-image.right {
+    width: 260px;
+    left: auto;
+    right: auto;
+  }
+}
+
+/* ===== SUPER SMALL SCREENS ===== */
+@media (max-width: 576px) {
+  .navbar {
+    padding: 10px 15px;
+  }
+
+  .brand-name {
+    font-size: 22px;
+  }
+
+  .custom-nav-link {
+    font-size: 18px;
+  }
+
+  .form-card {
+    width: 95%;
+    max-width: 340px;
+  }
+
+  .side-image.left,
+  .side-image.right {
+    width: 220px;
+    margin: 20px auto;
+  }
+}
