@@ -18,6 +18,9 @@ body#menu {
   font-family: 'Times New Roman', 'Poppins', sans-serif;
 }
 
+.company-name{
+  color: #FF70A6;
+}
 
 /* ---------------- FILTER BUTTONS ---------------- */
 .filter-buttons button {

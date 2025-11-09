@@ -5,6 +5,25 @@ body {
   color: #2e2e2e;
 }
 
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 60px;
+  background-color: #fff;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 100;
+}
+
+.custom-nav-link {
+    color: #FF0082;
+    font-size: 20px;
+    font-family:'Times New Roman', Times, serif;
+    font-weight: bold;
+}
+
 header {
   display: flex;
   justify-content: flex-end;
@@ -48,6 +67,7 @@ header a.active {
   font-size: 70px;
   color: #ff007f;
   margin-bottom: 20px;
+  font-weight: 800;
 }
 
 .about-text p {
@@ -167,4 +187,3 @@ footer {
   color: #555;
   font-size: 15px;
 }
-
